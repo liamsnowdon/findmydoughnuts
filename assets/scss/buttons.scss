@@ -1,0 +1,44 @@
+.btn-group {
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  @include breakpoint(small-down) {
+    flex-direction: column;
+    .button:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @include breakpoint(small) {
+    .button:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+button,
+.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 10px;
+  background: $white;
+  color: $black;
+  border: 1px solid $black;
+  transition: all .5s ease-in-out;
+  user-select: none;
+
+  // States
+  &:hover,
+  &:active,
+  &:focus,
+  &.active {
+    outline: 0;
+    background: $green;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+}

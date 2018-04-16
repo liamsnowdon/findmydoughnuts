@@ -1,0 +1,99 @@
+.doughnut-popup {
+  background: $white;
+  border: 1px solid $black;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: calc(100% - 30px);
+  overflow: hidden;
+  @include breakpoint(medium) {
+    width: 770px;
+  }
+}
+
+.doughnut-popup__header {
+  background: $green;
+  padding: 20px;
+  h2 {
+    margin: 0;
+  }
+}
+
+.doughnut-popup__content {
+  padding: 20px;
+}
+
+.doughnut-popup__search {
+  display: none;
+  margin-top: 15px;
+}
+
+.loading-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.loading-overlay__spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  animation: spinner 2s infinite;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.map-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $white;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  text-decoration: none;
+  color: $black;
+  box-shadow: 0 0 20px 0 $black;
+  text-align: center;
+}
+
+.map-popup__header {
+  padding: 10px;
+  background: $green;
+  h4 {
+    margin: 0;
+    font-weight: bold;
+  }
+}
+
+.map-popup__content {
+  padding: 10px;
+}

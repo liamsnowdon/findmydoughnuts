@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+@import 'popup';
+@import 'buttons';
+@import 'forms';
+
+#map {
+  height: 100%;
+  &.inactive {
+    pointer-events: none;
+  }
+}
+
+html, body {
+  background: $white;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
