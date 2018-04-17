@@ -128,8 +128,8 @@ button,
   background: #fff;
   color: #000;
   border: 1px solid #000;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
+  transition: background .5s ease-in-out, color .5s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -149,6 +149,10 @@ button,
 input {
   background-color: #fff;
   border: 1px solid #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-appearance: none;
   color: #000;
   font-weight: 400;
   height: 45px;
