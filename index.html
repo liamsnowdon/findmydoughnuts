@@ -25,7 +25,7 @@
 <div id="map" class="inactive"></div>
 <div class="page-overlay"></div>
 
-<div class="doughnut-popup">
+<div class="doughnut-popup js-doughnut-popup">
     <div class="doughnut-popup__header">
         <h2>Find My Doughnuts</h2>
     </div>
@@ -38,19 +38,19 @@
             <button class="js-search-myself button" type="button">Let me search!</button>
         </div>
 
-        <div class="doughnut-popup__search">
+        <div class="doughnut-popup__search js-search-location">
             <form id="location-search">
                 <div class="input-with-button">
-                    <input id="doughnut-popup__field" class="input-with-button__input" name="doughnut-popup__field" type="text" placeholder="Enter a location (e.g. 123 Example Road)">
+                    <input id="doughnut-popup__field" class="input-with-button__input js-search-field" name="doughnut-popup__field" type="text" placeholder="Enter a location (e.g. 123 Example Road)">
                     <button type="submit" class="button input-with-button__button">Search</button>
                 </div>
-                <span class="error-message"></span>
+                <span class="error-message js-search-error"></span>
             </form>
         </div>
     </div>
 </div>
 
-<a class="map-popup" href="">
+<a class="map-popup js-map-popup" href="">
     <div class="map-popup__header">
         <h4>Not what you're looking for?</h4>
     </div>
@@ -59,7 +59,6 @@
     </div>
 </a>
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/doughnut-search.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrFD0wvnH0680Zy-kS86z_2zmeVcXrVdY&libraries=places&callback=initMap" async defer></script>
 </body>
