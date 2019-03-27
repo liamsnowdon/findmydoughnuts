@@ -1,3 +1,95 @@
+.btn-group {
+  margin: 15px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .btn-group {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .btn-group .button:not(:last-child) {
+        margin-bottom: 10px; } }
+  @media screen and (min-width: 481px) {
+    .btn-group .button:not(:last-child) {
+      margin-right: 10px; } }
+
+button,
+.button {
+  -webkit-appearance: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
+  transition: background .5s ease-in-out, color .5s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  button:hover, button:active, button:focus, button.active,
+  .button:hover,
+  .button:active,
+  .button:focus,
+  .button.active {
+    outline: 0;
+    background: #7be0c1; }
+  button.disabled,
+  .button.disabled {
+    pointer-events: none;
+    opacity: 0.2; }
+
+input {
+  background-color: #fff;
+  border: 1px solid #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  color: #000;
+  font-weight: 400;
+  height: 45px;
+  padding: 5px 15px;
+  margin: 0;
+  width: 100%; }
+
+.input-with-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+
+.input-with-button__input {
+  border-right: 0; }
+
+.error-message {
+  color: #ff0000;
+  display: none;
+  margin-top: 5px; }
+
+.menu-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  height: 10%;
+  margin: 0;
+  padding: 15px;
+  list-style: none; }
+
 .doughnut-popup {
   background: #fff;
   border: 1px solid #000;
@@ -98,87 +190,8 @@
 .map-popup__content {
   padding: 10px; }
 
-.btn-group {
-  margin: 15px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  @media screen and (max-width: 480px) {
-    .btn-group {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .btn-group .button:not(:last-child) {
-        margin-bottom: 10px; } }
-  @media screen and (min-width: 481px) {
-    .btn-group .button:not(:last-child) {
-      margin-right: 10px; } }
-
-button,
-.button {
-  -webkit-appearance: none;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 0;
-  padding: 10px;
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
-  -webkit-transition: background .5s ease-in-out, color .5s ease-in-out;
-  transition: background .5s ease-in-out, color .5s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  button:hover, button:active, button:focus, button.active,
-  .button:hover,
-  .button:active,
-  .button:focus,
-  .button.active {
-    outline: 0;
-    background: #7be0c1; }
-  button.disabled,
-  .button.disabled {
-    pointer-events: none;
-    opacity: 0.2; }
-
-input {
-  background-color: #fff;
-  border: 1px solid #000;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-  color: #000;
-  font-weight: 400;
-  height: 45px;
-  padding: 5px 15px;
-  margin: 0;
-  width: 100%; }
-
-.input-with-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap; }
-
-.input-with-button__input {
-  border-right: 0; }
-
-.error-message {
-  color: #ff0000;
-  display: none;
-  margin-top: 5px; }
-
 #map {
-  height: 95%; }
+  height: 85%; }
   #map.inactive {
     pointer-events: none; }
 

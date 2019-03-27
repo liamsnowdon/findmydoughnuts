@@ -1,11 +1,9 @@
 @import 'variables';
 @import 'mixins';
-@import 'popup';
-@import 'buttons';
-@import 'forms';
+@import 'components/components';
 
 #map {
-  height: 95%;
+  height: 85%;
   &.inactive {
     pointer-events: none;
   }
